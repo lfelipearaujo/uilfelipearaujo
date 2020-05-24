@@ -1,0 +1,396 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+*.conteiner {
+  max-width: 960px;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  background: #f2416d;
+  padding: 8px 0;
+}
+
+.logo-desktop {
+  float: left;
+  padding-left: 10px;
+}
+
+.logo-desktop a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav.desktop {
+  float: right;
+}
+
+nav.desktop li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+nav.desktop a {
+  color: white;
+  text-decoration: none;
+}
+
+nav.desktop a:hover {
+  text-decoration: underline;
+}
+
+nav.mobile {
+  display: none;
+}
+
+nav.mobile h3 {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  color: white;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+section.bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+a.cta {
+  padding: 8px 20px;
+  border: 1px #e7426b;
+  color: #e7426b;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  max-width: 600px;
+  width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border-style: outset;
+}
+
+.servicos {
+  padding: 70px 70px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  display: inline-block;
+}
+
+.container-single {
+  width: 33.3%;
+  float: right;
+  padding: 0 10px;
+  margin-bottom: 0px;
+}
+
+div.icon-round {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: relative;
+}
+
+div.icon-round i {
+  position: absolute;
+  font-size: 25px;
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+div.texto-descricao {
+  color: white;
+  padding: 0 8px;
+  display: inline-block;
+  width: calc(100% - 60px);
+}
+
+div.texto-descricao h2 {
+  font-weight: normal;
+  font-size: 23px;
+}
+
+div.texto-descricao p {
+  color: white;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .container-single {
+    width: 100%;
+  }
+}
+
+section.servicos {
+  background: #e7426b;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding: 70px 70px;
+  display: inline-block;
+  width: 100%;
+}
+
+.conteiner-single {
+  float: left;
+  width: 33.33%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+div.icon-round {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px dotted whitesmoke;
+  position: relative;
+}
+div.icon-round i {
+  position: absolute;
+  font-size: 25px;
+  color: whitesmoke;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+div.texto-descricao {
+  color: whitesmoke;
+  display: inline-block;
+  width: calc(100%-60px);
+  padding: 0 8px;
+}
+.texto-descricao h2 {
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: normal;
+}
+.texto-descricao p {
+  color: whitesmoke;
+  font-size: 16px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+footer {
+  padding: 20px 0;
+  position: relative;
+  display: inline;
+  bottom: 0;
+  width: 100%;
+  background: rgb(34, 30, 30);
+}
+.f-one {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #f06285;
+}
+.f-two {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #f2416d;
+  text-align: center;
+  color: whitesmoke;
+}
+footer > .conteiner {
+  flex-wrap: wrap;
+  display: flex;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 2%;
+  position: relative;
+}
+footer {
+  padding: 20px 0;
+  position: absolute;
+}
+section.footer__ {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer-single {
+  width: 33.33%;
+  padding: 0 15px;
+  color: white;
+}
+/* FORM */
+
+section.formulario {
+  background: honeydew;
+  padding: 90px 0;
+}
+
+.form-group input[type="text"] {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e7426b;
+  padding-right: 20px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.form-group textarea {
+  height: 120px;
+  width: 100%;
+  border: 1px solid #e7426b;
+  padding: 10px;
+  resize: vertical; /* PARA N MEEXEER A TEXT BOX */
+}
+.form-group input[type="submit"] {
+  display: block;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid #e7426b;
+  background: #e7426b;
+  color: whitesmoke;
+  margin-top: 10px;
+  border-radius: 0.5%;
+  font-size: 18px;
+  border-bottom: 2px solid #ad1457;
+}
+input[type="submit"]:hover {
+  background: #f8bbd0;
+}
+
+.form-group span {
+  display: inline-block;
+  color: orange;
+  padding: 8px 0;
+}
+.box-sucesso {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  background: #e7426b;
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 15px;
+}
+
+/* SEC IMAGEM */
+.imagem {
+  background: honeydew;
+  border: 2px solid #e7426b;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 10%;
+
+  /* */
+}
+.conteiner p {
+  margin-top: 5px;
+  margin-left: 300px;
+  margin-bottom: 15px;
+  padding: 15px;
+  color: #e7426b;
+  text-align: center;
+  padding-bottom: 15px;
+  border: 2px dotted #e7426b;
+}
+
+.conteiner p.tooltipbox {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+.tooltip {
+  transition: 1s;
+  opacity: 0;
+  position: absolute;
+  left: -100px;
+  top: 0;
+
+  width: 300px;
+  padding: 8px 4px;
+  background: #d81b60;
+  color: whitesmoke;
+  margin-top: 55px;
+}
+p.tooltipbox:hover .tooltip {
+  opacity: 1;
+  right: 50px;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-single {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .conteiner-single {
+    width: 100%;
+  }
+
+  .logo-desktop,
+  nav.desktop {
+    display: none;
+  }
+
+  .logo-mobile a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  nav.mobile {
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  nav.mobile ul {
+    display: none;
+    background: #333;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+}
+nav.mobile li {
+  padding: 8px 0;
+  border-top: 1px solid white;
+  cursor: pointer;
+}
+nav.mobile li > a {
+  text-decoration: none;
+  color: white;
+}
