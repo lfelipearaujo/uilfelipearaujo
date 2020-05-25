@@ -201,51 +201,44 @@ div.texto-descricao {
   margin-top: 10px;
   display: inline-block;
 }
+/* FOOTERS */
 
-footer {
-  padding: 20px 0;
-  position: relative;
-  display: inline;
-  bottom: 0;
+section.footer__ {
   width: 100%;
-  background: rgb(34, 30, 30);
 }
-.f-one {
-  position: relative;
-  display: block;
+.f-one > .conteiner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer.f-one {
+  padding: 20px 0;
   width: 100%;
   background: #f06285;
 }
-.f-two {
-  position: relative;
-  display: block;
-  width: 100%;
+.footer-single {
+  width: 33.3%;
+  padding: 0 15px;
+  color: whitesmoke;
+}
+.footer-single h2 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.footer-single p {
+  font-size: 15px;
+  font-weight: 300;
+}
+footer.f-two {
   background: #f2416d;
+  padding: 8px 0;
   text-align: center;
   color: whitesmoke;
 }
-footer > .conteiner {
-  flex-wrap: wrap;
-  display: flex;
-  max-width: 1110px;
-  margin: 0 auto;
-  padding: 0 2%;
-  position: relative;
-}
-footer {
-  padding: 20px 0;
-  position: absolute;
-}
-section.footer__ {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-.footer-single {
-  width: 33.33%;
-  padding: 0 15px;
-  color: white;
-}
+
 /* FORM */
 
 section.formulario {
@@ -314,7 +307,7 @@ img {
 
   /* */
 }
-.conteiner p {
+.p4 {
   margin-top: 5px;
   margin-left: 300px;
   margin-bottom: 15px;
